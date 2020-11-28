@@ -187,13 +187,13 @@ header
 
 .header .ant-menu li.ant-menu-item-selected:before,
 .header .ant-menu li.ant-menu-item:hover:before {
-  left: 5%;
+  left: -20%;
   opacity: 1;
 }
 
 .header .ant-menu li.ant-menu-item-selected:after,
 .header .ant-menu li.ant-menu-item:hover:after {
-  right: 5%;
+  right: -20%;
   opacity: 1;
 }
 
