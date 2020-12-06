@@ -1,4 +1,16 @@
 # Getting Started with Create React App
+* gcloud alpha run deploy cloud-build \
+   --image gcr.io/ilkerispir/cloud-build \
+   --vpc-connector test-vpc \
+   --vpc-egress all \
+   --region europe-west4 \
+   --platform managed
+
+* gcloud alpha run deploy cloud-build --image gcr.io/ilkerispir/cloud-build \
+--vpc-connector projects/ilkerispir/locations/europe-west4/connectors/test-vpc \
+--vpc-egress all \
+--region europe-west4 \
+--platform managed
 
 * gcloud builds submit --tag gcr.io/ilkerispir/react-antd
 * gcloud run deploy --image gcr.io/ilkerispir/react-antd --region europe-west4 --platform managed
